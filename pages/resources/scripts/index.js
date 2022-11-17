@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', evt => {
+document.addEventListener('DOMContentLoaded', event => {
+    console.log(event);
     var but = document.createElement('button');
-    
     but.onclick = () => {
         console.log('BUTTON PRESSED');
     };
 
     but.innerHTML = 'HELLO';
-    document.appendChild(but);
+    document.body.appendChild(but);
 });
